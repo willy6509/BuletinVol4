@@ -71,12 +71,17 @@ background: linear-gradient(10deg, rgba(0, 74, 173, 1) 0%, rgba(255, 255, 255, 1
   width: 40px;
   height: 40px;
   object-fit: contain;
-  border-radius: 25px;
 }
 .dinus-logo {
   width: 120px;
   height: 40px;
   object-fit: contain;
+}
+.sudut-logo {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50px;
 }
 
 .book-title {

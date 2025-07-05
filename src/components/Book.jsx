@@ -13,6 +13,7 @@ function Book() {
       <div className="logo-center">
         <img src="/logo/logo_udinus.png" alt="Logo" className="dinus-logo" />
         <img src="/logo/logo_warta.png" alt="Logo" className="book-logo" />
+        <img src="/logo/logo_sudut.png" alt="Logo" className="sudut-logo" />
       </div>
 
       {/* Flipbook */}
