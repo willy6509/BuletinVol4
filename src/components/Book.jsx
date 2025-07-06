@@ -1,6 +1,6 @@
 import React from 'react';
 import HTMLFlipBook from "react-pageflip";
-import '../App.css'; // pastikan file ini aktif
+import '../App.css';
 
 function Book() {
   const bookData = Array.from({ length: 60 }, (_, i) => ({
@@ -16,7 +16,7 @@ function Book() {
         <img src="/logo/logo_sudut.png" alt="Logo" className="sudut-logo" />
       </div>
 
-      {/* Flipbook */}
+
       <HTMLFlipBook
         width={420}
         height={595}
@@ -24,14 +24,13 @@ function Book() {
         singlePage={true}
         mobileScrollSupport={true}
       >
-        {/* Cover depan */}
+        
         <div className="page cover" key="cover-front">
           <div className="page-content">
             <img src={bookData[0].image} alt="Cover Depan" className="page-image" />
           </div>
         </div>
 
-        {/* Halaman isi */}
         {bookData.slice(1, 59).map(book => (
           <div className="page" key={book.id}>
             <div className="page-content">
@@ -40,7 +39,6 @@ function Book() {
           </div>
         ))}
 
-        {/* Cover belakang */}
         <div className="page cover" key="cover-back">
           <div className="page-content">
             <img src={bookData[59].image} alt="Cover Belakang" className="page-image" />
